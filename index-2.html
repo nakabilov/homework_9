@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задания-2</title>
+    <style>
+       .element {
+        background: coral;
+       }
+    </style>
+</head>
+<body>
+    <div class="element">Element 1</div>
+    <div class="element">Element 2</div>
+    <div class="element">Element 3</div>
+    <div class="element">Element 4</div>
+    <div class="element">Element 5</div>
+    <div class="element">Element 6</div>
+    
+    <script>
+        const elements = document.getElementsByClassName('element');
+        for (let i = 0; i < elements.length; i++) {
+            if (i < elements.length-3){
+                
+                element = elements[i];
+                element.style.color = 'red';
+            }else{
+                element = elements[i];
+                element.style.color = 'green';
+            }
+            
+            console.log(element);  
+        }
+        
+    </script>
+</body>
+</html>
